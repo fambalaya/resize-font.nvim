@@ -17,12 +17,12 @@ Using LazyVim:
 Default:
 
 ```lua
-{
+require("resize-font").setup({
     min = 1,
     max = 50,
     keymaps = {
         zoom_in = { "<C-=>", "<C-ScroolWheelUp>" },
         zoom_out = { "<C-->", "<C-ScroolWheelDown>" },
     },
-}
+})
 ```
