@@ -10,7 +10,7 @@ local default_opts = {
 local function get_cur_font()
     local ft = vim.o.guifont
     if not ft then return end
-    local font, size = ft:match("([^:]+):h(%d+)")
+    local font, size = ft:match("([^:]+):[hH](%d+)")
     return font, size
 end
 
